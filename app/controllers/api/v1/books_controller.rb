@@ -79,8 +79,6 @@ module Api
         ]
       end
 
-      protected
-
       def book_params
         params.require(:data)
               .require(:attributes)
