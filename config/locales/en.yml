@@ -1,0 +1,16 @@
+# Example of overriding variables in SimpleJsonApi.
+en:
+  simple_json_api:
+    controller:
+      publishers:
+        name: 'publisher'
+      books:
+        name: 'book'
+      comments:
+        name: 'comment'
+      checkouts:
+        name: 'checkout'
+      patrons:
+        name 'patron'
+      authors:
+        name: 'author'

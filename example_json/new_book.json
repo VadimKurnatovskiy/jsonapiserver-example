@@ -1,0 +1,32 @@
+{
+  "data": {
+    "type": "books",
+    "attributes": {
+      "title": "An entry added programmatically 1",
+      "description": "A fake book",
+      "publication_date": "2015-05-22",
+      "price": 5.56
+    },
+    "relationships": {
+      "author": {
+        "data": {
+          "type": "authors",
+          "attributes": {
+            "first_name": "John",
+            "last_name": "Doe I",
+            "year_of_birth": "1976"
+          }
+        }
+      },
+      "publisher": {
+        "data": {
+          "type": "publishers",
+          "attributes": {
+            "name": "FooBar Publishers",
+            "country": "USA"
+          }
+        }
+      }
+    }
+  }
+}

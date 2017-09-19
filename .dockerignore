@@ -1,0 +1,8 @@
+.git*
+doc/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+.tags*
+*.gem
+erl_crash.dump
