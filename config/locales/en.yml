@@ -1,6 +1,6 @@
-# Example of overriding variables in SimpleJsonApi.
+# Example of overriding variables in JsonApiServer.
 en:
-  simple_json_api:
+  json_api_server:
     controller:
       publishers:
         name: 'publisher'

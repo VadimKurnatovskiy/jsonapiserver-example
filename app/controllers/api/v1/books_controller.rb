@@ -3,7 +3,7 @@ module Api
     class BooksController < ApplicationController
 
       def index
-        builder = SimpleJsonApi::Builder.new(request, Book.all)
+        builder = JsonApiServer::Builder.new(request, Book.all)
          .add_pagination(pagination_options)
          .add_filter(filter_options)
          .add_include(include_options)
@@ -32,7 +32,7 @@ module Api
       protected
 
       def book_serializer_for(book)
-        builder = SimpleJsonApi::Builder.new(request, book)
+        builder = JsonApiServer::Builder.new(request, book)
          .add_include(include_options)
          .add_fields
        ::V1::BookSerializer.from_builder(builder)

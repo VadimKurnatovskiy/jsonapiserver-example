@@ -1,5 +1,5 @@
 module V1
-  class BooksSerializer < SimpleJsonApi::ResourcesSerializer
+  class BooksSerializer < JsonApiServer::ResourcesSerializer
     serializer V1::BookSerializer
   end
 end

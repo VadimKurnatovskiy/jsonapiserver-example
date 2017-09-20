@@ -1,5 +1,5 @@
 module V1
-  class PatronSerializer < SimpleJsonApi::ResourceSerializer
+  class PatronSerializer < JsonApiServer::ResourceSerializer
     resource_type 'patrons'
 
     include V1::SerializerFactory::Comment

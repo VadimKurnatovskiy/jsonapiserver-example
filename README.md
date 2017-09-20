@@ -1,6 +1,6 @@
 # README
 
-This app demonstrates the use of the SimpleJsonApi gem https://github.com/ed-mare/simple_json_api. It is a Rails 5.1.2 app which is known to work with Ruby 2.4.1. It uses sqlite and is configured for file-based caching.
+This app demonstrates the use of the JsonApiServer gem https://github.com/ed-mare/json_api_server. It is a Rails 5.1.x app which is known to work with Ruby 2.4.1. It uses sqlite and is configured for file-based caching.
 
 **Run this app in development environment only.**
 
@@ -66,7 +66,7 @@ application/vnd.api+json is configured in `config/initializers/mime_types.rb`
 
 #### Configurations
 
-Configurations are in `config/initializers/simple_json_api.rb`
+Configurations are in `config/initializers/json_api_server.rb`
 
 ```shell
 config.active_support.escape_html_entities_in_json = false
@@ -172,7 +172,7 @@ The books controller demonstrates low level caching of related resources.
 http://localhost:3000/api/v1/books?include=book.checkouts,book.comments,comment.patron,checkout.patron&fields[books]=title&fields[comments]=text&fields[patrons]=first_name,last_name&fields[checkouts]=checkout_date
 ```
 
-After caching for the first time, it should perform a query like:
+After caching for the first time, it performs queries like...
 
 ```shell
 SELECT COUNT(*) FROM "books"
@@ -628,7 +628,7 @@ Run it again and it should return (unique index constraint):
 }
 ```
 
-#### Example posting validation error
+#### Example posting with validation error response
 
 ```shell
 curl -vX POST http://localhost:3000/api/v1/books?include=book.author,book.publisher -d @new_book_validation_error.json --header "Content-Type: application/vnd.api+json"

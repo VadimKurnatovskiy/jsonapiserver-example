@@ -1,5 +1,5 @@
 module V1
-  class CommentSerializer < SimpleJsonApi::ResourceSerializer
+  class CommentSerializer < JsonApiServer::ResourceSerializer
     resource_type 'comments'
 
     include V1::SerializerFactory::Book

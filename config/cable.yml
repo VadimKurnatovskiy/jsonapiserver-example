@@ -7,4 +7,4 @@ test:
 production:
   adapter: redis
   url: redis://localhost:6379/1
-  channel_prefix: simplejsonapi-sqlite-rails-5-1_production
+  channel_prefix: JsonApiServer-sqlite-rails-5-1_production

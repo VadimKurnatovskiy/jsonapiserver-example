@@ -1,4 +1,4 @@
-SimpleJsonApi.configure do |c|
+JsonApiServer.configure do |c|
   c.base_url = 'http://localhost:3000'
   c.logger = Rails.logger
   c.serializer_options = {

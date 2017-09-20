@@ -1,5 +1,5 @@
 module V1
-  class CommentsSerializer < SimpleJsonApi::ResourcesSerializer
+  class CommentsSerializer < JsonApiServer::ResourcesSerializer
     serializer V1::CommentSerializer
   end
 end

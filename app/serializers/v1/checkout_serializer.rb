@@ -1,5 +1,5 @@
 module V1
-  class CheckoutSerializer < SimpleJsonApi::ResourceSerializer
+  class CheckoutSerializer < JsonApiServer::ResourceSerializer
     resource_type 'checkouts'
 
     include V1::SerializerFactory::Book

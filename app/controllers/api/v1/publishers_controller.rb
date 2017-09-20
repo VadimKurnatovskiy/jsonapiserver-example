@@ -3,7 +3,7 @@ module Api
     class PublishersController < ApplicationController
 
       def index
-        builder = SimpleJsonApi::Builder.new(request, Publisher.all)
+        builder = JsonApiServer::Builder.new(request, Publisher.all)
          .add_pagination(pagination_options)
          .add_filter(filter_options)
          .add_include(include_options)
@@ -15,7 +15,7 @@ module Api
       end
 
       def show
-        builder = SimpleJsonApi::Builder.new(request, Publisher.find(params[:id]))
+        builder = JsonApiServer::Builder.new(request, Publisher.find(params[:id]))
          .add_include(include_options)
          .add_fields
 

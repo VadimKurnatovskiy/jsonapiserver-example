@@ -1,3 +1,3 @@
 class ApplicationController < ActionController::API
-  include SimpleJsonApi::Controller::ErrorHandling
+  include JsonApiServer::Controller::ErrorHandling
 end

@@ -1,5 +1,5 @@
 module V1
-  class PatronsSerializer < SimpleJsonApi::ResourcesSerializer
+  class PatronsSerializer < JsonApiServer::ResourcesSerializer
     serializer V1::PatronsSerializer
   end
 end

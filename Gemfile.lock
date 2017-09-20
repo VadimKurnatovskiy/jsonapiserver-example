@@ -1,9 +1,9 @@
 GIT
-  remote: https://github.com/ed-mare/simple_json_api.git
+  remote: https://github.com/ed-mare/json_api_server.git
   revision: a68324c453011ee217c0d8e36f78464d2a005de8
   ref: a68324c
   specs:
-    simple_json_api (0.0.1)
+    json_api_server (0.0.1)
       activesupport (>= 4.1)
       oj (~> 3.0)
       railties (>= 4.1)
@@ -133,7 +133,7 @@ DEPENDENCIES
   listen
   puma (~> 3.7)
   rails (~> 5.1.2)
-  simple_json_api!
+  json_api_server!
   sqlite3
   tzinfo-data
   will_paginate (~> 3.1.0)

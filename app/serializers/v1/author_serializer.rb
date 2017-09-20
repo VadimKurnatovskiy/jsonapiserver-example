@@ -1,5 +1,5 @@
 module V1
-  class AuthorSerializer < SimpleJsonApi::ResourceSerializer
+  class AuthorSerializer < JsonApiServer::ResourceSerializer
     resource_type 'authors'
 
     include V1::SerializerFactory::Book
