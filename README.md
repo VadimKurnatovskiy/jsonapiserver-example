@@ -23,6 +23,8 @@ bundle exec rails s -p 3000
 If using docker:
 
 ```shell
+# Docker image known to work on Ubuntu 14.04 and 16.04 with docker 1.3.1+
+
 # build the web image
 docker-compose build
 
