@@ -17,6 +17,8 @@ end
 
 group :development do
   gem 'listen'
+  gem 'bundle-audit', '~> 0.1'
+  gem 'brakeman', '~> 4.2'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
